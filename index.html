@@ -1,11 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Category Video</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Selection Demo - Open Mind Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        
+        .header h1 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        
+        .disclaimer {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        
+        .disclaimer h3 {
+            color: #856404;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .disclaimer p {
+            color: #856404;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        
+        .video-section {
+            padding: 20px;
+        }
+        
+        .video-wrapper {
+            background: #000;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.4em;
+            }
+            
+            .logo {
+                max-width: 150px;
+            }
+            
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <video width="100%" controls autoplay>
-        <source src="video.mp4" type="video/mp4">
-    </video>
+    <div class="container">
+        <!-- Header with Logo -->
+        <div class="header">
+            <img src="https://www.openmind.in/wp-content/uploads/2023/05/logo-white.png" alt="Open Mind Services Logo" class="logo">
+            <h1>Category Selection Tutorial</h1>
+            <p>VMM Store Management System</p>
+        </div>
+        
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <h3>⚠️ Official Use Only</h3>
+            <p>This tutorial is intended for <strong>VMM store employees only</strong> and is for official training purposes. Unauthorized sharing or distribution of this content is strictly prohibited.</p>
+        </div>
+        
+        <!-- Video Section -->
+        <div class="video-section">
+            <div class="video-wrapper">
+                <video controls controlsList="nodownload">
+                    <source src="category-video.mp4" type="video/mp4">
+                    <source src="Choose_Category__1_.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2026 Open Mind Services Limited | For Official Use Only</p>
+        </div>
+    </div>
 </body>
 </html>
